@@ -1,0 +1,38 @@
+Anotações da semana omnistack 11
+
+npm install nodemon -D >> Biblioteca para hotreload da aplicação backend. Usa apenas em ambiente de desenvolvimento.
+Executar com nodemon index.js
+
+Para comunicar com banco de dados, podemos usar:
+Driver: SQL puro. Ao mudar o banco, pode não funcionar.
+QueryBuilder: Usa as querys usando javascript. Melhor, pois, tem compatibilidade com outros bancos.
+
+Iremos usar o knex.js
+npx knex >> mostra os comandos disponíveis
+
+npx knex migrate:status >> Mostra o que já rodou e o que tem para rodar
+
+Para fazer a comunicação com o banco:
+npx knex.init
+
+vai criar o knexfile.js
+
+criar o migrations
+
+configurar o migrations no knex
+
+npx knex migrate:make create_ongs >> Cria o arquivo de migrations create_ongs
+
+Para não dar o warning, colocar o useDefaultasDefault: true
+
+npx knex migrate:latest
+
+Caso desejar desfazer:
+npx knex migrate:rollback
+
+Para criar a conexão com o banco de dados, criamos o connection.js dentro da pasta database
+
+Pela metodologia do MVC, não se cria dois métodos nas rotas de um mesmo recurso, por isso, foi criado o ProfileController para listar os incidents
+
+
+npm install cors << Módulo determina quem pode acessar a aplicação
