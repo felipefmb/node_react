@@ -1,3 +1,30 @@
+Instalação VSCode
+Instalar tema dracula
+Font FiraCode
+Plugins: 
+Color highlight
+dotenv
+editorconfig
+ >> Criar o editorconfig
+eslint
+gitlens
+graphql prisma
+Live Server
+Live Share
+Material Icon Theme
+styled components
+rocketseat
+  - ReactJS
+  - React Native
+
+Acessar:
+https://gist.github.com/diego3g
+Procurar o setings.json(CTRL + Shift + P) e substituir do atual que usando
+
+CTRL + Shift + P >> Preference Open keyboard shortcuts
+add selection to next find match
+
+--
 Anotações da semana omnistack 11
 
 npm install nodemon -D >> Biblioteca para hotreload da aplicação backend. Usa apenas em ambiente de desenvolvimento.
@@ -36,3 +63,70 @@ Pela metodologia do MVC, não se cria dois métodos nas rotas de um mesmo recurs
 
 
 npm install cors << Módulo determina quem pode acessar a aplicação
+
+
+Frontend
+
+Inica o projeto
+Deletar
+readme.md
+App.css
+App.test.js
+index.css
+logo.svg
+serviceworker.js
+setupTests.js
+
+no arquivo index.js, remover a importação do arquivo index.css
+no arquivo index.js, remover a importação do arquivo serviceworker.js
+
+No App.js remover a importação da logo
+No App.js remover a importação do App.css
+
+Remover todo o conteúdo, deixando apenas o return()
+
+Dentro da pasta public:
+deletar: robots.txt
+manifest.json
+as logos: 192.png e 512.png
+Dentro do index.html
+Deletar do meta description até antes do title
+
+Conceitos:
+Componente: Funções que retornam html
+JSX, quando o HTML está integrado dentro do javascript
+Propriedades: São como atributos que manipulam os componentes,
+Ex: um title que passa para dentro do componente.
+Exemplos
+//export default function Header(props) {
+// <h1>{props.children}</h1> //Dentro do heaader
+export default function Header({children}) {
+  return(
+    <header>
+      <h1>{children}</h1>
+    </header>
+  );
+}
+
+Ao usar:
+function App() {
+  return (
+    <Header>
+      Semana Omnistack
+    </Header>
+  );
+}
+
+Estados: Informação que vai ser mantida pelo componente
+
+--
+Obs: No react não pode colocar um componente abaixo do outro sem ter nada envolta
+
+Instala pacote de icones
+npm install react-icons
+
+Instala pacote de rotas
+npm install react-router-dom
+
+Instala client http
+npm install axios
