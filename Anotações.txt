@@ -130,3 +130,44 @@ npm install react-router-dom
 
 Instala client http
 npm install axios
+
+--
+Mobile
+
+Instalar o expo na máquina:
+npm install -g expo-cli
+
+Iniciar o projeto(pasta raiz)
+expo init mobile
+  template: blank
+  
+start do projeto
+npm start dentro da pasta mobile
+
+Documentação do expo
+docs.expo.io
+
+Navegação
+React Navigation << funciona com e sem expo
+npm install @react-navigation/native
+
+Com expo
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+Sem expo
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+Navegação por botões
+npm install @react-navigation/stack
+
+expo install expo-constants
+
+Pacote para abrir email
+expor install expo-mail-composer
+
+Instalar o axios
+npm install axios
+
+Para iphone funciona o Intl do javascript
+Para android tem que instalar o pacote intl
+npm install intl
