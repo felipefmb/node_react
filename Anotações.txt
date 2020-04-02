@@ -171,3 +171,21 @@ npm install axios
 Para iphone funciona o Intl do javascript
 Para android tem que instalar o pacote intl
 npm install intl
+
+Funções avançadas
+celebrate >> biblioteca para fazer validações
+npm install celebrate
+
+jest >> framework para testes
+npm install -D jest
+
+npx jest --init << Inicializar o jest dentro do projeto
+
+Executar tests:
+npm test
+
+Biblioteca para configurar variáveisdee ambiente. Ver package.json  << 
+npm install cross-env
+
+supertest << Biblioteca para realizar requisições nos testes de integração
+npm install -D supertest
